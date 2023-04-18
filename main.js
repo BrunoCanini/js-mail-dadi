@@ -1,12 +1,3 @@
-// CHIEDERE L EMAIL ALL UTENTE (PROMPT O TYPETEXT)
-
-// AVVIARE UN EVENTO (ADD EVENT LISTNER)
-
-// VERIFICARE L EMAIL DATA SE è PRESENTE IN LISTA
-
-// VERO (ANDIAMO AVANTI)
-// FALSO (ERRORE)
-
 const button = document.getElementById("bottone");
 
 button.addEventListener( "click" , function() {
@@ -20,18 +11,14 @@ button.addEventListener( "click" , function() {
 
         if(emailUtente == validaEmail){
             corretto = true;
-            corretto = alert("vai");
-        } else{
-            corretto = false;
         }
     }
 
-    // if(corretto = true){
-    //     corretto = alert("vai");
-    // } else {
-    //     alert("no");
-    // }
 
-
+    if(corretto){
+        alert("vai");
+    } else{
+        alert("no");
+    }
 
 });
