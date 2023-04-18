@@ -13,17 +13,22 @@ button.addEventListener( "click" , function() {
     
     let emailUtente = document.getElementById("email").value;
     let emailValide = ["bruno@boolean.com" , "tizio@boolean.com" , "caio@boolean.com"];
+    let corretto ;
 
     for (let c = 0; c < emailValide.length; c++) {
         let validaEmail = emailValide[c];
 
         if(emailUtente == validaEmail){
-            alert("benvenuto");
+            corretto = true;
         } else{
-            alert("Non sei autorizzato");
+            corretto = false ;
         }
-        
     }
 
+    if(corretto = true){
+        alert("vai");
+    } else if(corretto = false){
+        alert("no");
+    }
 
 });
