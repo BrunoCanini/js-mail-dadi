@@ -16,9 +16,9 @@ button.addEventListener( "click" , function() {
 
 
     if(corretto){
-        alert("vai");
+        alert("Utente autorizzato");
     } else{
-        alert("no");
+        alert("Utente non autorizzato");
     }
 
 });
